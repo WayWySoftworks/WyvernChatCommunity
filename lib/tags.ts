@@ -347,6 +347,11 @@ export const species: CharacterTag[] = [
     description: "Often a pointy-eared, long-lived, magical creature. Often associated with nature, beauty, and grace. Think of Tolkien's elves, not Santa's elves."
   },
   {
+    value: "Lamia",
+    label: "Lamia",
+    description: "A lamia is a creature originating in Greek mythos. Depicted with the body of a snake and the upper body of a human, traditionally they lure unsuspecting travelers with their charms, only to devour them.  However these days, they aren't relegated to a single role. Their allure and deadly nature make them a popular species."
+  },
+  {
     value: "Dwarf",
     label: "Dwarf",
     description: "A short, stocky, and sturdy creature often associated with mining, crafting, and drinking. Think Gimli from Lord of the Rings. Honestly, do think of Santa's elves for this one."

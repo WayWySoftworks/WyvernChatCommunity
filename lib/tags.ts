@@ -352,6 +352,11 @@ export const species: CharacterTag[] = [
     description: "A lamia is a creature originating in Greek mythos. Depicted with the body of a snake and the upper body of a human, traditionally they lure unsuspecting travelers with their charms, only to devour them.  However these days, they aren't relegated to a single role. Their allure and deadly nature make them a popular species."
   },
   {
+    value: "Demihuman",
+    label: "Demihuman",
+    description: "Beings with a mix of human and non-human traits, often resembling humanoid creatures like elves, dwarves, or beastfolk. They possess enhanced abilities tied to their non-human lineage, making them skilled in both physical and magical disciplines."
+  },
+  {
     value: "Dwarf",
     label: "Dwarf",
     description: "A short, stocky, and sturdy creature often associated with mining, crafting, and drinking. Think Gimli from Lord of the Rings. Honestly, do think of Santa's elves for this one."

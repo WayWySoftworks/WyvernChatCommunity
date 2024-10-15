@@ -1,0 +1,7 @@
+<|begin_of_text|>{{#if systemPrompt}}{{systemPrompt}}{{/if}}{{#if loreBefore}}{{loreBefore}}{{/if}}{{#if character.description}}{{character.description}}{{/if}}{{#if character.personality}}{{character.personality}}{{/if}}{{#if character.scenario}}{{character.scenario}}{{/if}}{{#if character.mes_example}}Message Examples:
+{{character.mes_example}}{{/if}}{{#if showPersonaAtTop}}
+[ {{personaDesc}} ]{{/if}}{{#each allMessages}}{{#if system}}<|eot_id|><|start_header_id|>user<|end_header_id|>{{else}}<|eot_id|><|start_header_id|>user<|end_header_id|>
+{{#if showSystem }}{{#if systemInfo}}{{systemInfo}}{{/if}}{{/if}}{{#if showPersona}}
+{{#if personaDesc}}[ {{personaDesc}}{{/if}}{{/if}}
+{{name}}: {{/if}}{{message}}{{/each}}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+{{#if impersonate}}{{personaName}}:{{else}}{{character.name}}:{{/if}}{{#if continuePrompt}}{{continue}}{{/if}}

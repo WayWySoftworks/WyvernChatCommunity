@@ -1,0 +1,14 @@
+[INST]{{#if systemPrompt}}[ {{systemPrompt}} ]{{/if}}{{#if loreBefore}}
+{{loreBefore}}{{/if}}{{#if character.description}}
+{{character.description}}{{/if}}{{#if character.personality}}
+{{character.personality}}{{/if}}{{#if character.scenario}}
+{{character.scenario}}{{/if}}{{#if character.mes_example}}Message Examples:
+{{character.mes_example}}{{/if}}{{#if showPersonaAtTop}}
+[ {{personaDesc}} ]{{/if}}
+{{#each allMessages}}
+{{#if loreentries}}[ {{join loreentries.content ' \n'}} ]{{/if}}
+{{#if this.system}}{{else}}{{this.name}}: {{/if}}{{this.message}}{{#if this.showPersona}}
+{{personaDesc}} {{/if}}{{#if this.showSystem}}
+{{systemInfo}}{{/if}}{{/each}}
+[/INST]
+{{#if impersonate}}{{personaName}}:{{else}}{{character.name}}:{{/if}}{{#if continuePrompt}}{{continue}}{{/if}}

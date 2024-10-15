@@ -1,0 +1,20 @@
+{{#if loreBefore}}
+\x16system{{loreBefore}}\x17{{/if}}\x16system{{#if systemPrompt}}
+{{systemPrompt}}{{/if}}{{#if character.description}}
+{{character.description}}{{/if}}{{#if character.personality}}
+{{character.personality}}{{/if}}{{#if character.scenario}}
+{{character.scenario}}{{/if}}{{#if character.mes_example}}Message Examples:
+{{character.mes_example}}{{/if}}{{#if showPersonaAtTop}}
+[ {{personaDesc}} ]{{/if}}
+\x17
+{{#each allMessages}}
+{{#if loreentries}}[ {{join loreentries.content ' \n'}} ]{{/if}}
+{{#if system}}\x16system{{else}}{{#ifEquals role 'User'}}\x16user{{else}}\x16assistant{{/ifEquals}}
+{{name}}: {{/if}}{{message}}
+\x17{{#if showPersona}}
+\x16system 
+[{{personaDesc}}]{{/if}}{{#if showSystem }}{{#if systemInfo}}\x16system 
+{{systemInfo}}\x17{{/if}}{{/if}}
+{{/each}}
+\x16assistant
+{{#if impersonate}}{{personaName}}:{{else}}{{character.name}}:{{/if}}{{#if continuePrompt}}{{continue}}{{/if}}

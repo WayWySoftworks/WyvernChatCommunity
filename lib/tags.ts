@@ -467,6 +467,16 @@ export const species: CharacterTag[] = [
     description: "An anthropomorphic animal often associated with furry fandom, fantasy, or mythology. Anthros can have human-like bodies, animal features, and various abilities, and can be realistic or stylized, cute or fierce."
   },
   {
+    value: "Furry",
+    label: "Furry",
+    description: "Anthro with fur."
+  },
+  {
+      value: "Scaly",
+      label: "Scaly",
+      description: "Anthro with scales."
+  },
+  {
     value: "Machine",
     label: "Machine",
     description: "A mechanical or robotic creature often associated with science fiction, technology, and artificial intelligence. Machines can have various forms, functions, and abilities, and can be helpful or harmful, sentient or mindless."

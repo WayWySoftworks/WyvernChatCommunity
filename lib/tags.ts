@@ -5,6 +5,7 @@ export interface CharacterTag {
 }
 
 export const defaultTags: CharacterTag[] = [
+  // Media Categories
   {
     value: "Anime",
     label: "🎌 Anime",
@@ -31,7 +32,7 @@ export const defaultTags: CharacterTag[] = [
     description: "A character from a live-action television show.",
   },
   {
-    value: "book",
+    value: "Book",
     label: "📖 Book",
     description: "A character from a novel or short story.",
   },
@@ -42,278 +43,299 @@ export const defaultTags: CharacterTag[] = [
   },
   {
     value: "Original",
-    label: "Original",
+    label: "💡 Original",
     description: "A character created by the author.",
   },
+
+  // Genre Tags
   {
     value: "Fantasy",
     label: "🧝 Fantasy",
-    description: "A card with a fantasy theme, such as magic, mythical creatures, or otherworldly settings.",
+    description: "Magic, mythical creatures, or otherworldly settings.",
   },
   {
     value: "Sci-Fi",
     label: "🚀 Sci-Fi",
-    description: "A card with a science fiction theme, such as advanced technology, space travel, or futuristic settings.",
+    description: "Advanced technology, space travel, futuristic settings.",
   },
   {
     value: "Modern",
     label: "Modern",
-    description: "A card with a modern setting, such as contemporary technology, fashion, or culture.",
+    description: "Contemporary technology, fashion, or culture.",
   },
   {
     value: "Historical",
     label: "🏰 Historical",
-    description: "A card with a historical setting, such as a specific time period, culture, or event.",
+    description: "Specific time periods, cultures, or events.",
   },
   {
     value: "Horror",
-    label: "Horror",
-    description: "A card with a horror theme, such as supernatural elements, suspense, or gore.",
+    label: "👹 Horror",
+    description: "Supernatural elements, suspense, or gore.",
   },
   {
     value: "Romance",
     label: "❤️ Romance",
-    description: "A card with a romantic theme, such as love, relationships, or dating.",
+    description: "Love, relationships, or dating.",
   },
   {
     value: "Action",
     label: "💥 Action",
-    description: "A card with an action theme, such as fighting, adventure, or excitement.",
+    description: "Fighting, adventure, or excitement.",
   },
   {
     value: "Comedy",
     label: "😂 Comedy",
-    description: "A card with a comedic theme, such as humor, jokes, or satire.",
+    description: "Humor, jokes, or satire.",
   },
   {
     value: "Drama",
     label: "🎭 Drama",
-    description: "A card with a dramatic theme, such as conflict, emotion, or tension.",
+    description: "Conflict, emotion, or tension.",
   },
   {
     value: "Slice-Of-Life",
     label: "Slice of Life",
-    description: "A card with a slice of life theme, such as everyday events, relationships, or experiences.",
+    description: "Everyday events, relationships, or experiences.",
   },
   {
     value: "Supernatural",
-    label: "Supernatural",
-    description: "A card with a supernatural theme, such as magic, ghosts, or otherworldly beings.",
+    label: "👻 Supernatural",
+    description: "Magic, ghosts, or otherworldly beings.",
   },
   {
     value: "Mystery",
     label: "🕵️ Mystery",
-    description: "A card with a mystery theme, such as puzzles, clues, or suspense.",
+    description: "Puzzles, clues, or suspense.",
   },
   {
     value: "Thriller",
     label: "🔪 Thriller",
-    description: "A card with a thriller theme, such as suspense, danger, or excitement.",
+    description: "Suspense, danger, or excitement.",
   },
   {
     value: "Adventure",
     label: "🏞️ Adventure",
-    description: "A card with an adventure theme, such as exploration, quests, or challenges.",
+    description: "Exploration, quests, or challenges.",
   },
+
+  // Theme-Based Tags
   {
     value: "Chatter",
     label: "🗣️ Chatter",
-    description: "A card with a chatty theme, such as casual conversation, banter, or gossip.",
+    description: "More like texting rather than traditional roleplaying.",
   },
   {
     value: "Realistic",
     label: "🌍 Realistic",
-    description: "A card with a realistic theme, such as everyday life, relationships, or events.",
+    description: "Everyday life, relationships, or events.",
   },
   {
-    value: "Wish-Fullfillment",
-    label: "Wish Fulfillment",
-    description: "A card with a wish fulfillment theme, such as fulfilling desires, dreams, or fantasies.",
+    value: "Wish-Fulfillment",
+    label: "🌠 Wish Fulfillment",
+    description: "Fulfilling desires, dreams, or fantasies.",
   },
   {
     value: "Fluff",
     label: "Fluff",
-    description: "A card with a fluffy theme, such as sweetness, cuteness, or light-heartedness.",
+    description: "Sweetness, cuteness, or light-heartedness.",
   },
   {
     value: "Angst",
     label: "Angst",
-    description: "A card with an angsty theme, such as sadness, pain, or emotional turmoil.",
+    description: "Sadness, pain, or emotional turmoil.",
   },
   {
     value: "Furry",
     label: "Furry",
-    description: "A card with a furry theme, such as anthropomorphic animals, fursonas, or animal characters.",
+    description: "Anthropomorphic animals or fursonas.",
   },
   {
     value: "Monster",
-    label: "Monster",
-    description: "A card with a monster theme, such as mythical creatures, beasts, or supernatural beings.",
+    label: "👺 Monster",
+    description: "Mythical creatures, beasts, or supernatural beings.",
   },
+
+  // Concept-Based Tags
   {
     value: "Religious",
     label: "Religious",
-    description: "A card with a religious theme, such as deities, faith, or spiritual beliefs.",
+    description: "Deities, faith, or spiritual beliefs.",
   },
   {
     value: "Political",
     label: "Political",
-    description: "A card with a political theme, such as government, power, or social issues.",
+    description: "Government, power, or social issues.",
   },
   {
     value: "Philosophical",
     label: "Philosophical",
-    description: "A card with a philosophical theme, such as deep thoughts, ideas, or concepts.",
+    description: "Deep thoughts, ideas, or concepts.",
   },
   {
     value: "Educational",
     label: "Educational",
-    description: "A card with an educational theme, such as learning, knowledge, or information.",
+    description: "Learning, knowledge, or information.",
   },
   {
     value: "Experimental",
-    label: "Experimental",
-    description: "A card with an experimental theme, such as new ideas, techniques, or approaches.",
+    label: "🧪 Experimental",
+    description: "New ideas, techniques, or approaches.",
   },
   {
     value: "Collab",
     label: "🤝 Collab",
-    description: "A card created in collaboration with other artists or writers.",
+    description: "Created in collaboration with other artists or writers.",
   },
+
+  // Holiday-Themed Tags
   {
     value: "Halloween",
     label: "🎃 Halloween",
-    description: "A card with a Halloween theme, such as pumpkins, ghosts, or costumes.",
+    description: "Pumpkins, ghosts, or costumes.",
   },
   {
     value: "Christmas",
     label: "🎄 Christmas",
-    description: "A card with a Christmas theme, such as Santa Claus, presents, or snow.",
+    description: "Santa Claus, presents, or snow.",
   },
   {
     value: "Valentine",
     label: "💘 Valentine",
-    description: "A card with a Valentine's Day theme, such as hearts, flowers, or romance.",
+    description: "Hearts, flowers, or romance.",
   },
   {
     value: "Hanukkah",
     label: "🕎 Hanukkah",
-    description: "A card with a Hanukkah theme, such as menorahs, dreidels, or latkes.",
+    description: "Menorahs, dreidels, or latkes.",
   },
   {
     value: "Easter",
     label: "🐰 Easter",
-    description: "A card with an Easter theme, such as bunnies, eggs, or chocolate.",
+    description: "Bunnies, eggs, or chocolate.",
   },
   {
     value: "Ramadan",
     label: "🌙 Ramadan",
-    description: "A card with a Ramadan theme, such as mosques, lanterns, or dates.",
+    description: "Mosques, lanterns, or dates.",
   },
   {
     value: "Pride",
     label: "🏳️‍🌈 Pride",
-    description: "A card with a Pride theme, such as rainbows, flags, or LGBTQ+ pride.",
+    description: "Rainbows, flags, or LGBTQ+ pride.",
   },
+
+  // Aesthetic/Setting-Based Tags
   {
     value: "Pirate",
     label: "🏴‍☠️ Pirate",
-    description: "A card with a pirate theme, such as ships, treasure, or swashbuckling.",
+    description: "Ships, treasure, or swashbuckling.",
   },
   {
     value: "Steampunk",
     label: "Steampunk",
-    description: "A card with a steampunk theme, such as Victorian era technology, airships, or clockwork.",
+    description: "Victorian-era technology, airships, or clockwork.",
   },
   {
     value: "Cyberpunk",
     label: "Cyberpunk",
-    description: "A card with a cyberpunk theme, such as futuristic technology, hackers, or dystopian society.",
+    description: "Futuristic technology, hackers, or dystopian society.",
   },
   {
     value: "Gothic",
     label: "Gothic",
-    description: "A card with a gothic theme, such as dark romance, horror, or Victorian aesthetics.",
+    description: "Dark romance, horror, or Victorian aesthetics.",
   },
   {
     value: "Medieval",
     label: "Medieval",
-    description: "A card with a medieval theme, such as knights, castles, or dragons.",
+    description: "Knights, castles, or dragons.",
   },
   {
     value: "Futuristic",
     label: "Futuristic",
-    description: "A card with a futuristic theme, such as advanced technology, space travel, or cybernetics.",
+    description: "Advanced technology, space travel, or cybernetics.",
   },
+
+  // Environment-Based Tags
   {
     value: "Office",
     label: "Office",
-    description: "A card with an office theme, such as work, business, or corporate culture.",
+    description: "Work, business, or corporate culture.",
   },
   {
     value: "Beach",
     label: "Beach",
-    description: "A card with a beach theme, such as sand, sun, or surf.",
+    description: "Sand, sun, or surf.",
   },
   {
     value: "Forest",
     label: "Forest",
-    description: "A card with a forest theme, such as trees, animals, or nature.",
+    description: "Trees, animals, or nature.",
   },
   {
     value: "City",
     label: "City",
-    description: "A card with a city theme, such as buildings, streets, or urban life.",
+    description: "Buildings, streets, or urban life.",
   },
   {
     value: "Concert",
     label: "Concert",
-    description: "A card with a concert theme, such as music, bands, or performances.",
+    description: "Music, bands, or performances.",
   },
   {
     value: "Restaurant",
     label: "Restaurant",
-    description: "A card with a restaurant theme, such as food, dining, or cooking.",
+    description: "Food, dining, or cooking.",
   },
+
+  // Seasonal Tags
   {
     value: "Fall",
     label: "🍂 Fall",
-    description: "A card with a fall theme, such as leaves, pumpkins, or harvest.",
+    description: "Leaves, pumpkins, or harvest.",
   },
   {
     value: "Winter",
     label: "❄️ Winter",
-    description: "A card with a winter theme, such as snow, ice, or holidays.",
+    description: "Snow, ice, or holidays.",
   },
   {
     value: "Spring",
     label: "🌸 Spring",
-    description: "A card with a spring theme, such as flowers, rain, or rebirth.",
+    description: "Flowers, rain, or rebirth.",
   },
   {
     value: "Summer",
     label: "☀️ Summer",
-    description: "A card with a summer theme, such as sun, beach, or vacation.",
+    description: "Sun, beach, or vacation.",
   },
+
+  // Identity Tags
   {
     value: "Male",
     label: "Male",
-    description: "A character who identifies as a male."
+    description: "A character who identifies as male.",
   },
   {
     value: "Female",
     label: "Female",
-    description: "A character who identifies as a female."
+    description: "A character who identifies as female.",
   },
   {
     value: "Non-Binary",
     label: "Non-Binary",
-    description: "A character who identifies as non-binary."
+    description: "A character who identifies as non-binary.",
+  },
+  {
+    value: "Trans",
+    label: "🏳️‍⚧️ Trans",
+    description: "A character who identifies as transgender.",
   },
   {
     value: "Genderfluid",
     label: "Genderfluid",
-    description: "A character who identifies as genderfluid."
+    description: "A character who identifies as genderfluid.",
   },
 ];
 
@@ -1025,8 +1047,8 @@ export const sexTags: CharacterTag[] = [
   },
   {
     value: "Smut",
-    label: "Shameless Smut",
-    description: "A card with a shameless smut theme, such as explicit sexual content, erotica, or adult themes.",
+    label: "Smut",
+    description: "Little to no plot, full horny.",
   },
   {
     value: "Exotic Dancer",
@@ -1480,6 +1502,21 @@ export const povs: CharacterTag[] = [
     value: "Third",
     label: "Third Person",
     description: "The card is written from third person perpective, narrating the actions of the character as an observer."
+  },
+  {
+    value: "AnyPOV",
+    label: "AnyPOV",
+    description: "`{{user}}` can easily self-insert, regardless of gender."
+  },
+  {
+    value: "FemPOV",
+    label: "FemPOV",
+    description: "Written for female-identifying `{{user}}`."
+  },
+  {
+    value: "MalePOV",
+    label: "MalePOV",
+    description: "Written for a male-identifying `{{user}}`."
   }
 ]
 
@@ -1496,7 +1533,7 @@ export const cardFormats: CharacterTag[] = [
   },
   {
     value: "PList",
-    label: "Python List",
+    label: "PList/SBF",
     description: "Card is formatted to contain limited dialogue or prose, and is primarily driven by structured data."
   },
   {

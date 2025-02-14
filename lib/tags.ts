@@ -143,7 +143,7 @@ export const defaultTags: CharacterTag[] = [
   {
     value: "Angst",
     label: "Angst",
-    description: "Sadness, pain, or emotional turmoil.",
+    description: "Sadness, pain, tragedy or emotional turmoil.",
   },
   {
     value: "Furry",
@@ -650,8 +650,8 @@ export const occupations: CharacterTag[] = [
     description: "A person who extinguishes fires and rescues people from danger.",
   },
   {
-    value: "Soldier",
-    label: "Soldier",
+    value: "Military",
+    label: "Military",
     description: "Rambo, Captain America, and other military personnel who fight for their country.",
   },
   {
@@ -1466,6 +1466,11 @@ export const sexTags: CharacterTag[] = [
     description: "Feminization of a male partner for sexual pleasure.",
   },
   {
+    value: "Futanari",
+    label: "Futanari",
+    description: "Two-sexed hermaphrodite character that has both sexual reproductive organs, including both male and female genitalia, as well as female breasts.",
+  },
+  {
     value: "Pegging",
     label: "Pegging",
     description: "Enjoyment of penetration with a strap on by a female partner.",
@@ -1588,6 +1593,11 @@ export const otherPersonalityTraits: CharacterTag[] = [
     value: "Tomboy",
     label: "Tomboy",
     description: "A woman who engages in culturally male activities."
+  },
+  {
+    value: "Femboy",
+    label: "Femboy",
+    description: "Usually cisgender male character who expresses himself with traditionally feminine behaviours.",
   },
   {
     value: "Gamer",

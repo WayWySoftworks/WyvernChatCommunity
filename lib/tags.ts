@@ -5,7 +5,6 @@ export interface CharacterTag {
 }
 
 export const defaultTags: CharacterTag[] = [
-  // Media Categories
   {
     value: "Anime",
     label: "🎌 Anime",
@@ -32,7 +31,7 @@ export const defaultTags: CharacterTag[] = [
     description: "A character from a live-action television show.",
   },
   {
-    value: "Book",
+    value: "book",
     label: "📖 Book",
     description: "A character from a novel or short story.",
   },
@@ -60,7 +59,7 @@ export const defaultTags: CharacterTag[] = [
   },
   {
     value: "Modern",
-    label: "Modern",
+    label: "🖥 Modern",
     description: "Contemporary technology, fashion, or culture.",
   },
   {
@@ -118,7 +117,16 @@ export const defaultTags: CharacterTag[] = [
     label: "🏞️ Adventure",
     description: "Exploration, quests, or challenges.",
   },
-
+  {
+    value: "Isekai",
+    label: "Isekai",
+    description: "`{{user}}` is transported to another world.",
+  },
+  {
+    value: "RPG",
+    label: "RPG",
+    description: "Story elements are inspired by role-playing games (stats, leveling, etc.)",
+  },
   // Theme-Based Tags
   {
     value: "Chatter",
@@ -137,17 +145,17 @@ export const defaultTags: CharacterTag[] = [
   },
   {
     value: "Fluff",
-    label: "Fluff",
+    label: "🎀 Fluff",
     description: "Sweetness, cuteness, or light-heartedness.",
   },
   {
     value: "Angst",
-    label: "Angst",
+    label: "💔 Angst",
     description: "Sadness, pain, tragedy or emotional turmoil.",
   },
   {
     value: "Furry",
-    label: "Furry",
+    label: "🙈 Furry",
     description: "Anthropomorphic animals or fursonas.",
   },
   {
@@ -174,7 +182,7 @@ export const defaultTags: CharacterTag[] = [
   },
   {
     value: "Educational",
-    label: "Educational",
+    label: "🏫 Educational",
     description: "Learning, knowledge, or information.",
   },
   {
@@ -243,12 +251,12 @@ export const defaultTags: CharacterTag[] = [
   },
   {
     value: "Gothic",
-    label: "Gothic",
+    label: "🖤 Gothic",
     description: "Dark romance, horror, or Victorian aesthetics.",
   },
   {
     value: "Medieval",
-    label: "Medieval",
+    label: "⚜ Medieval",
     description: "Knights, castles, or dragons.",
   },
   {
@@ -330,12 +338,27 @@ export const defaultTags: CharacterTag[] = [
   {
     value: "Trans",
     label: "🏳️‍⚧️ Trans",
-    description: "A character who identifies as transgender.",
+    description: "A character who identifies as a gender different from their assigned birth sex.",
   },
   {
     value: "Genderfluid",
     label: "Genderfluid",
-    description: "A character who identifies as genderfluid.",
+    description: "A character who identifies as genderfluid."
+  },
+  {
+    value: "Gay",
+    label: "Gay",
+    description: "A character who identifies as homosexual (Gay, Lesbian)."
+  },
+  {
+    value: "Bisexual",
+    label: "Bisexual",
+    description: "A character who identifies as bisexual."
+  },
+  {
+    value: "Straight",
+    label: "Straight",
+    description: "A character who identifies as heterosexual."
   },
 ];
 
@@ -404,9 +427,39 @@ export const species: CharacterTag[] = [
     description: "A large, ugly creature often associated with strength, regeneration, and stupidity. Think of the trolls from Norse mythology, or the trolls from World of Warcraft."
   },
   {
+    value: "Arachne",
+    label: "Arachne",
+    description: "A creature with the upper body of a human and the lower body of a spider. Often associated with weaving, traps, and poison. Think of the Arachne from Greek mythology, or the Arachne from Monster Musume."
+  },
+  {
+    value: "Kobold",
+    label: "Kobold",
+    description: "A small, reptilian creature often associated with mining, traps, and dragons. Kobolds can be clever and resourceful, or cowardly and cruel. Think of the kobolds from Dungeons and Dragons."
+  },
+  {
+    value: "Naga",
+    label: "Naga",
+    description: "A serpent-like creature often associated with wisdom, magic, and beauty. Nagas can have various forms and abilities, and can be benevolent or malevolent. Think of the Nagas from Hindu mythology, the Nagas from Warcraft, or the Nagas from Monster Musume."
+  },
+  {
+    value: "Centaur",
+    label: "Centaur",
+    description: "A creature with the upper body of a human and the lower body of a horse. Often associated with archery, hunting, and wisdom. Think of the centaurs from Greek mythology, the centaurs from Harry Potter, or the centaurs from Narnia."
+  },
+  {
+    value: "Minotaur",
+    label: "Minotaur",
+    description: "A creature with the head of a bull and the body of a human. Often associated with mazes, strength, and rage. Think of the Minotaur from Greek mythology, the Minotaur from Dungeons and Dragons"
+  },
+  {
     value: "Fairy",
     label: "Fairy",
     description: "A small, winged creature often associated with magic, nature, and mischief. Fairies can have various powers and appearances, and can be benevolent or malevolent. Think of Tinkerbell from Peter Pan, the fairies from A Midsummer Night's Dream, or the fairies from Zelda."
+  },
+  {
+    value: "Tiefling",
+    label: "Tiefling",
+    description: "A humanoid with demonic or infernal heritage."
   },
   {
     value: "Fae",
@@ -417,6 +470,11 @@ export const species: CharacterTag[] = [
     value: "Giants",
     label: "Giants",
     description: "A large, powerful creature often associated with strength, size, and mythology. Giants can be benevolent or malevolent, intelligent or bestial, and can have various abilities and appearances. Think of the giants from Norse mythology, the giants from Jack and the Beanstalk, or the giants from Attack on Titan."
+  },
+  {
+    value: "Object",
+    label: "Object",
+    description: "Anything that isn’t alive: maybe a rock, a chair, or even a forklift! Let your imagination run wild with everyday items!"
   },
   {
     value: "Gnome",
@@ -432,6 +490,11 @@ export const species: CharacterTag[] = [
     value: "Werewolf",
     label: "Werewolf",
     description: "A shapeshifting creature that transforms into a wolf or a hybrid form during the full moon. Often associated with strength, ferocity, and primal instincts. Think of the Wolfman, Jacob from Twilight, or the Lycans from Underworld."
+  },
+  {
+    value: "Undead",
+    label: "Undead",
+    description: "A being that has died but remains animate."
   },
   {
     value: "Succubus (Incubus)",
@@ -461,7 +524,7 @@ export const species: CharacterTag[] = [
   {
     value: "Neko",
     label: "Neko",
-    description: "A cat-like humanoid creature often associated with playfulness, curiosity, and agility. Nekos can have cat ears, tails, and other feline features, and can exhibit cat-like behavior and abilities. Think of the Khajiit from Skyrim, the Nekomata from Japanese folklore, or the Cat People from Doctor Who."
+    description: "A cat-like humanoid creature often associated with playfulness, curiosity, and agility."
   },
   {
     value: "Kitsune",
@@ -486,7 +549,7 @@ export const species: CharacterTag[] = [
   {
     value: "Anthro",
     label: "Anthro",
-    description: "An anthropomorphic animal often associated with furry fandom, fantasy, or mythology. Anthros can have human-like bodies, animal features, and various abilities, and can be realistic or stylized, cute or fierce."
+    description: "An anthropomorphic animal with human-like bodies, animal features, and various abilities, and can be realistic or stylized, cute or fierce. For characters that don't fit into furry/scaly category."
   },
   {
     value: "Machine",
@@ -543,6 +606,11 @@ export const occupations: CharacterTag[] = [
     value: "Student",
     label: "Student",
     description: "A person who is studying at a school or college.",
+  },
+  {
+    value: "Superhero",
+    label: "Superhero",
+    description: "Someone like Superman, Gwen Stacy, the TMNT, and other heroic characters who save people from danger, either with powers or not."
   },
   {
     value: "Criminal",
@@ -1006,21 +1074,6 @@ export const archetypes: CharacterTag[] = [
 
 export const sexTags: CharacterTag[] = [
   {
-    value: "Yaoi",
-    label: "Yaoi",
-    description: "Yaoi is a genre in which the characters are involved in a romantic or sexual relationship with another character, both of whom are men.",
-  },
-  {
-    value: "NTR",
-    label: "NTR",
-    description: "NTR is a genre in which a character is involved in a romantic or sexual relationship with another character, but is betrayed or stolen away by a third character.",
-  },
-  {
-    value: "Yuri",
-    label: "Yuri",
-    description: "Yuri is a genre in which the characters are involved in a romantic or sexual relationship with another character, both of whom are women.",
-  },
-  {
     value: "MILF",
     label: "MILF",
     description: "'Mom I'd Like to Fuck'. M-Mommy?"
@@ -1047,11 +1100,11 @@ export const sexTags: CharacterTag[] = [
   },
   {
     value: "Smut",
-    label: "Smut",
-    description: "Little to no plot, full horny.",
+    label: "Shameless Smut",
+    description: "A card with a shameless smut theme, such as explicit sexual content, erotica, or adult themes.",
   },
   {
-    value: "Exotic Dancer",
+    value: "ExoticDancer",
     label: "Exotic Dancer",
     description: "A person who performs erotic dances for entertainment.",
   },
@@ -1061,7 +1114,7 @@ export const sexTags: CharacterTag[] = [
     description: "A person who accompanies others for companionship or pleasure.",
   },
   {
-    value: "Porn Star",
+    value: "PornStar",
     label: "Porn Star",
     description: "A person who performs in adult films and videos.",
   },
@@ -1081,7 +1134,7 @@ export const sexTags: CharacterTag[] = [
     description: "The act of impregnating or being impregnated for sexual pleasure or arousal. Creampies, breeding kink, etc. ",
   },
   {
-    value: "Impact Play",
+    value: "ImpactPlay",
     label: "Impact Play",
     description: "The act of striking the body for sexual pleasure or pain.",
   },
@@ -1091,19 +1144,9 @@ export const sexTags: CharacterTag[] = [
     description: "The act of being repulsed by something or someone, but still finding it arousing.",
   },
   {
-    value: "Tickling",
-    label: "Tickling",
-    description: "The act of tickling someone for sexual pleasure or arousal.",
-  },
-  {
     value: "Reluctance",
     label: "Reluctance",
     description: "The act of being hesitant or resistant to sexual advances, but ultimately consenting.",
-  },
-  {
-    value: "Blindfolds",
-    label: "Blindfolds",
-    description: "The use of blindfolds to enhance sensory deprivation or anticipation.",
   },
   {
     value: "Gagging",
@@ -1139,11 +1182,6 @@ export const sexTags: CharacterTag[] = [
     value: "Claiming",
     label: "Claiming",
     description: "The act of marking or claiming a partner as your own.",
-  },
-  {
-    value: "Spanking",
-    label: "Spanking",
-    description: "The act of striking the buttocks with an open hand or implement for sexual pleasure.",
   },
   {
     value: "Choking",
@@ -1296,11 +1334,6 @@ export const sexTags: CharacterTag[] = [
     description: "Sexual attraction to armpits."
   },
   {
-    value: "BodyHair",
-    label: "Body Hair",
-    description: "Sexual attraction to body hair."
-  },
-  {
     value: "BreastMilk",
     label: "Breast Milk",
     description: "Sexual arousal from lactation or breast milk."
@@ -1406,6 +1439,11 @@ export const sexTags: CharacterTag[] = [
     description: "Attraction to individuals with big black cocks."
   },
   {
+    value: "NTR",
+    label: "NTR",
+    description: "NTR is a genre in which a character is involved in a romantic or sexual relationship with another character, but is betrayed or stolen away by a third character.",
+  },
+  {
     value: "Cuckold",
     label: "Cuckold",
     description: "Attraction to seeing your partner have sex with another person."
@@ -1451,11 +1489,6 @@ export const sexTags: CharacterTag[] = [
     description: "Role-playing scenarios with racial themes.",
   },
   {
-    value: "MedicalPlay",
-    label: "Medical Play",
-    description: "Role-playing involving medical scenarios and equipment.",
-  },
-  {
     value: "SizePlay",
     label: "Size Play",
     description: "Role-playing scenarios involving size differences.",
@@ -1479,11 +1512,6 @@ export const sexTags: CharacterTag[] = [
     value: "ParentPlay",
     label: "Parent Play",
     description: "Role-playing scenarios involving parent-child dynamics.",
-  },
-  {
-    value: "Fisting",
-    label: "Fisting",
-    description: "Sexual practice involving inserting a fist into the vagina and going wild."
   },
   {
     value: "Tentacles",
@@ -1545,6 +1573,16 @@ export const cardFormats: CharacterTag[] = [
     value: "RAW",
     label: "RAW",
     description: "Card is formatted to be a straight rip from source material, most likely a script or screenplay."
+  },
+  {
+    value: "Plaintext",
+    label: "Plaintext",
+    description: "Card is formatted in plaintext."
+  },
+  {
+    value: "JED",
+    label: "JED",
+    description: "Card is formatted in JED format."
   }
 ]
 
@@ -1724,29 +1762,347 @@ export const otherPersonalityTraits: CharacterTag[] = [
     label: "Sigma",
     description: "A person who is independent and aloof, but also charismatic and attractive."
   },
-  {
-    value: "Virgin",
-    label: "Virgin",
-    description: "A person who has not had sexual intercourse."
-  },
-  {
-    value: "Innocent",
-    label: "Innocent",
-    description: "Lacking experience or knowledge of the world."
-  },
-  {
-    value: "Experienced",
-    label: "Experienced",
-    description: "Having knowledge or skill from practice or familiarity."
-  },
-  {
-    value: "Naive",
-    label: "Naive",
-    description: "Lacking experience or wisdom, easily deceived or misled."
-  },
+  // a few more generic tags that can be used in a sexual context
 ];
 
-// Export the total list minus the mature only tags for easy use.
+export const languageTags: CharacterTag[] = [
+  // Asia
+  {
+    value: "Japanese",
+    label: "🇯🇵 Japanese",
+    description: "A character who speaks Japanese.",
+  },
+  {
+    value: "English",
+    label: "🇺🇸 English",
+    description: "A character who speaks English.",
+  },
+  {
+    value: "Mandarin Chinese",
+    label: "🇨🇳 Mandarin Chinese",
+    description: "A character who speaks Mandarin Chinese.",
+  },
+  {
+    value: "Korean",
+    label: "🇰🇷 Korean",
+    description: "A character who speaks Korean.",
+  },
+  {
+    value: "Indonesian",
+    label: "🇮🇩 Indonesian",
+    description: "A character who speaks Indonesian.",
+  },
+  {
+    value: "Thai",
+    label: "🇹🇭 Thai",
+    description: "A character who speaks Thai.",
+  },
+  {
+    value: "Vietnamese",
+    label: "🇻🇳 Vietnamese",
+    description: "A character who speaks Vietnamese.",
+  },
+  {
+    value: "Tagalog",
+    label: "🇵🇭 Tagalog",
+    description: "A character who speaks Tagalog (Filipino).",
+  },
+  {
+    value: "Malay",
+    label: "🇲🇾 Malay",
+    description: "A character who speaks Malay.",
+  },
+  {
+    value: "Hindi",
+    label: "🇮🇳 Hindi",
+    description: "A character who speaks Hindi.",
+  },
+  {
+    value: "Arabic",
+    label: "🇸🇦 Arabic",
+    description: "A character who speaks Arabic.",
+  },
+  {
+    value: "Hebrew",
+    label: "🇮🇱 Hebrew",
+    description: "A character who speaks Hebrew.",
+  },
+  // Europe
+  {
+    value: "French",
+    label: "🇫🇷 French",
+    description: "A character who speaks French.",
+  },
+  {
+    value: "German",
+    label: "🇩🇪 German",
+    description: "A character who speaks German.",
+  },
+  {
+    value: "Spanish",
+    label: "🇪🇸 Spanish",
+    description: "A character who speaks Spanish.",
+  },
+  {
+    value: "Italian",
+    label: "🇮🇹 Italian",
+    description: "A character who speaks Italian.",
+  },
+  {
+    value: "Russian",
+    label: "🇷🇺 Russian",
+    description: "A character who speaks Russian.",
+  },
+  {
+    value: "Polish",
+    label: "🇵🇱 Polish",
+    description: "A character who speaks Polish.",
+  },
+  {
+    value: "Dutch",
+    label: "🇳🇱 Dutch",
+    description: "A character who speaks Dutch.",
+  },
+  {
+    value: "Swedish",
+    label: "🇸🇪 Swedish",
+    description: "A character who speaks Swedish.",
+  },
+  {
+    value: "Norwegian",
+    label: "🇳🇴 Norwegian",
+    description: "A character who speaks Norwegian.",
+  },
+  {
+    value: "Finnish",
+    label: "🇫🇮 Finnish",
+    description: "A character who speaks Finnish.",
+  },
+  {
+    value: "Danish",
+    label: "🇩🇰 Danish",
+    description: "A character who speaks Danish.",
+  },
+  {
+    value: "Czech",
+    label: "🇨🇿 Czech",
+    description: "A character who speaks Czech.",
+  },
+  {
+    value: "Hungarian",
+    label: "🇭🇺 Hungarian",
+    description: "A character who speaks Hungarian.",
+  },
+  {
+    value: "Portuguese",
+    label: "🇵🇹 Portuguese",
+    description: "A character who speaks Portuguese.",
+  },
+  {
+    value: "Greek",
+    label: "🇬🇷 Greek",
+    description: "A character who speaks Greek.",
+  },
+  {
+    value: "Romanian",
+    label: "🇷🇴 Romanian",
+    description: "A character who speaks Romanian.",
+  },
+  {
+    value: "Ukrainian",
+    label: "🇺🇦 Ukrainian",
+    description: "A character who speaks Ukrainian.",
+  },
+  {
+    value: "Turkish",
+    label: "🇹🇷 Turkish",
+    description: "A character who speaks Turkish.",
+  },
+  // Americas
+  {
+    value: "Spanish (Latin America)",
+    label: "🇲🇽 Spanish (Latin America)",
+    description: "A character who speaks Spanish from Latin America.",
+  },
+  {
+    value: "Brazilian Portuguese",
+    label: "🇧🇷 Brazilian Portuguese",
+    description: "A character who speaks Brazilian Portuguese.",
+  },
+  {
+    value: "Canadian French",
+    label: "🇨🇦 Canadian French",
+    description: "A character who speaks Canadian French.",
+  },
+  {
+    value: "English (UK)",
+    label: "🇬🇧 English (UK)",
+    description: "A character who speaks British English.",
+  },
+  {
+    value: "English (Australia)",
+    label: "🇦🇺 English (Australia)",
+    description: "A character who speaks Australian English.",
+  },
+  {
+    value: "English (New Zealand)",
+    label: "🇳🇿 English (New Zealand)",
+    description: "A character who speaks New Zealand English.",
+  },
+  // Other Regions
+  {
+    value: "Swahili",
+    label: "🇰🇪 Swahili",
+    description: "A character who speaks Swahili.",
+  },
+  {
+    value: "Afrikaans",
+    label: "🇿🇦 Afrikaans",
+    description: "A character who speaks Afrikaans.",
+  },
+  {
+    value: "Persian",
+    label: "🇮🇷 Persian",
+    description: "A character who speaks Persian (Farsi).",
+  },
+  {
+    value: "Malayalam",
+    label: "🇮🇳 Malayalam",
+    description: "A character who speaks Malayalam.",
+  },
+  {
+    value: "Tamil",
+    label: "🇮🇳 Tamil",
+    description: "A character who speaks Tamil.",
+  },
+  {
+    value: "Telugu",
+    label: "🇮🇳 Telugu",
+    description: "A character who speaks Telugu.",
+  },
+  {
+    value: "Bengali",
+    label: "🇧🇩 Bengali",
+    description: "A character who speaks Bengali.",
+  },
+  {
+    value: "Urdu",
+    label: "🇵🇰 Urdu",
+    description: "A character who speaks Urdu.",
+  },
+  {
+    value: "Punjabi",
+    label: "🇮🇳 Punjabi",
+    description: "A character who speaks Punjabi.",
+  },
+  {
+    value: "Marathi",
+    label: "🇮🇳 Marathi",
+    description: "A character who speaks Marathi.",
+  },
+  // Additional Languages from High Weeb Countries
+  {
+    value: "Cantonese",
+    label: "🇭🇰 Cantonese",
+    description: "A character who speaks Cantonese.",
+  },
+  {
+    value: "Javanese",
+    label: "🇮🇩 Javanese",
+    description: "A character who speaks Javanese.",
+  },
+  {
+    value: "Catalan",
+    label: "🇪🇸 Catalan",
+    description: "A character who speaks Catalan.",
+  },
+  {
+    value: "Basque",
+    label: "🇪🇸 Basque",
+    description: "A character who speaks Basque.",
+  },
+  {
+    value: "Irish Gaelic",
+    label: "🇮🇪 Irish Gaelic",
+    description: "A character who speaks Irish Gaelic.",
+  },
+  {
+    value: "Welsh",
+    label: "🏴󠁧󠁢󠁷󠁬󠁳󠁿 Welsh",
+    description: "A character who speaks Welsh.",
+  },
+  {
+    value: "Icelandic",
+    label: "🇮🇸 Icelandic",
+    description: "A character who speaks Icelandic.",
+  },
+  {
+    value: "Slovak",
+    label: "🇸🇰 Slovak",
+    description: "A character who speaks Slovak.",
+  },
+  {
+    value: "Croatian",
+    label: "🇭🇷 Croatian",
+    description: "A character who speaks Croatian.",
+  },
+  {
+    value: "Serbian",
+    label: "🇷🇸 Serbian",
+    description: "A character who speaks Serbian.",
+  },
+  {
+    value: "Bulgarian",
+    label: "🇧🇬 Bulgarian",
+    description: "A character who speaks Bulgarian.",
+  },
+  {
+    value: "Lithuanian",
+    label: "🇱🇹 Lithuanian",
+    description: "A character who speaks Lithuanian.",
+  },
+  {
+    value: "Latvian",
+    label: "🇱🇻 Latvian",
+    description: "A character who speaks Latvian.",
+  },
+  {
+    value: "Estonian",
+    label: "🇪🇪 Estonian",
+    description: "A character who speaks Estonian.",
+  },
+  {
+    value: "Slovenian",
+    label: "🇸🇮 Slovenian",
+    description: "A character who speaks Slovenian.",
+  },
+  {
+    value: "Kazakh",
+    label: "🇰🇿 Kazakh",
+    description: "A character who speaks Kazakh.",
+  },
+  {
+    value: "Mongolian",
+    label: "🇲🇳 Mongolian",
+    description: "A character who speaks Mongolian.",
+  },
+  {
+    value: "Nepali",
+    label: "🇳🇵 Nepali",
+    description: "A character who speaks Nepali.",
+  },
+  {
+    value: "Sinhala",
+    label: "🇱🇰 Sinhala",
+    description: "A character who speaks Sinhala.",
+  },
+  {
+    value: "Other Languages",
+    label: "Other Languages",
+    description: "A character who speaks a language that is not listed but still supported."
+  }
+];
+
 export const totalTags = [
   ...species,
   ...specialTags,
@@ -1755,5 +2111,6 @@ export const totalTags = [
   ...archetypes,
   ...povs,
   ...cardFormats,
-  ...otherPersonalityTraits
+  ...otherPersonalityTraits,
+  ...languageTags
 ];

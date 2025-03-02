@@ -318,7 +318,9 @@ export const defaultTags: CharacterTag[] = [
     label: "☀️ Summer",
     description: "Sun, beach, or vacation.",
   },
+];
 
+export const identity: CharacterTag[] = [
   // Identity Tags
   {
     value: "Male",
@@ -338,27 +340,39 @@ export const defaultTags: CharacterTag[] = [
   {
     value: "Trans",
     label: "🏳️‍⚧️ Trans",
-    description: "A character who identifies as a gender different from their assigned birth sex.",
+    description:
+      "A character who identifies as a gender different from their assigned birth sex.",
   },
   {
     value: "Genderfluid",
     label: "Genderfluid",
-    description: "A character who identifies as genderfluid."
+    description: "A character who identifies as genderfluid.",
   },
   {
     value: "Gay",
     label: "Gay",
-    description: "A character who identifies as homosexual (Gay, Lesbian)."
+    description: "A character who identifies as homosexual (Gay, Lesbian).",
   },
   {
     value: "Bisexual",
     label: "Bisexual",
-    description: "A character who identifies as bisexual."
+    description: "A character who identifies as bisexual.",
   },
   {
     value: "Straight",
     label: "Straight",
-    description: "A character who identifies as heterosexual."
+    description: "A character who identifies as heterosexual.",
+  },
+  {
+    value: "Tomboy",
+    label: "Tomboy",
+    description: "A woman who engages in culturally male activities.",
+  },
+  {
+    value: "Femboy",
+    label: "Femboy",
+    description:
+      "Usually cisgender male character who expresses himself with traditionally feminine behaviours.",
   },
 ];
 
@@ -1628,16 +1642,6 @@ export const otherPersonalityTraits: CharacterTag[] = [
     description: "Passionate about heavy metal music and culture.",
   },
   {
-    value: "Tomboy",
-    label: "Tomboy",
-    description: "A woman who engages in culturally male activities."
-  },
-  {
-    value: "Femboy",
-    label: "Femboy",
-    description: "Usually cisgender male character who expresses himself with traditionally feminine behaviours.",
-  },
-  {
     value: "Gamer",
     label: "Gamer",
     description: "Likes to play video games."
@@ -2104,6 +2108,7 @@ export const languageTags: CharacterTag[] = [
 ];
 
 export const totalTags = [
+  ...identity, // add identity
   ...species,
   ...specialTags,
   ...defaultTags,
